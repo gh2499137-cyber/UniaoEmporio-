@@ -1,0 +1,148 @@
+/* Reset e Fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    color: #fff;
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #f36f21; /* Cor de destaque laranja */
+}
+
+.cart-icon {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Imagens Full-width (Banners) */
+.hero img, .banner-secundario img, .imagem-destaque img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Seções Gerais */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #111;
+}
+
+/* Grid de Produtos */
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-produto {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-produto:hover {
+    transform: translateY(-5px);
+}
+
+.card-produto img {
+    width: 100%;
+    height: auto;
+    background-color: #e9e9e9;
+}
+
+.info-produto {
+    padding: 20px;
+}
+
+.info-produto h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.preco {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f36f21;
+    margin-bottom: 15px;
+}
+
+.btn-comprar {
+    background-color: #111;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #f36f21;
+}
+
+/* Rodapé */
+footer {
+    background-color: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}

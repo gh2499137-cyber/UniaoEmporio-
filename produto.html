@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - União Empório</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+    <!-- Cabeçalho / Navegação -->
+    <header class="navbar">
+        <div class="logo">UNIÃO EMPÓRIO</div>
+        <nav>
+            <ul>
+                <li><a href="produtos.html" class="active">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" id="cart-btn">
+            🛒 Carrinho (<span id="cart-count">0</span>)
+        </div>
+    </header>
+
+    <!-- Banner Superior -->
+    <section class="banner-secundario">
+        <img src="IMAGENS/top 2.png" alt="Nova Coleção União Empório">
+    </section>
+
+    <!-- Conteúdo Principal do Catálogo -->
+    <main class="container-produtos">
+        
+        <!-- Barra de Filtros e Seleção -->
+        <div class="filtros-bar">
+            <div class="categorias-filtros">
+                <button class="btn-filtro active" data-filter="todos">Todos</button>
+                <button class="btn-filtro" data-filter="masculino">Masculino</button>
+                <button class="btn-filtro" data-filter="feminino">Feminino</button>
+            </div>
+            <div class="ordenacao">
+                <label for="sort">Ordenar por:</label>
+                <select id="sort">
+                    <option value="relevancia">Relevância</option>
+                    <option value="menor-preco">Menor Preço</option>
+                    <option value="maior-preco">Maior Preço</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Grid de Produtos -->
+        <section class="produtos-section">
+            <div class="grid-produtos">
+
+                <!-- Produto 1 -->
+                <article class="card-produto" data-categoria="masculino" data-preco="79.90">
+                    <div class="badge">Lançamento</div>
+                    <img src="camiseta p.png" alt="Camiseta Performance Preta">
+                    <div class="info-produto">
+                        <span class="categoria-tag">Masculino</span>
+                        <h3>Camiseta Performance Preta</h3>
+                        <p class="preco">R$ 79,90</p>
+                        <button class="btn-comprar">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <!-- Produto 2 -->
+                <article class="card-produto" data-categoria="masculino" data-preco="119.90">
+                    <img src="calça p.png" alt="Calça Jogger Preta">
+                    <div class="info-produto">
+                        <span class="categoria-tag">Masculino</span>
+                        <h3>Calça Jogger Masculina Preta</h3>
+                        <p class="preco">R$ 119,90</p>
+                        <button class="btn-comprar">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <!-- Produto 3 -->
+                <article class="card-produto" data-categoria="masculino" data-preco="79.90">
+                    <img src="camiseta m.png" alt="Camiseta Dry-Fit Azul Petróleo">
+                    <div class="info-produto">
+                        <span class="categoria-tag">Masculino</span>
+                        <h3>Camiseta Dry-Fit Azul Petróleo</h3>
+                        <p class="preco">R$ 79,90</p>
+                        <button class="btn-comprar">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <!-- Produto 4 -->
+                <article class="card-produto" data-categoria="feminino" data-preco="139.90">
+                    <div class="badge">Mais Vendido</div>
+                    <img src="leg pr.png" alt="Legging Alta Sustentação">
+                    <div class="info-produto">
+                        <span class="categoria-tag">Feminino</span>
+                        <h3>Legging Alta Sustentação</h3>
+                        <p class="preco">R$ 139,90</p>
+                        <button class="btn-comprar">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <!-- Produto 5 -->
+                <article class="card-produto" data-categoria="feminino" data-preco="139.90">
+                    <img src="leg.png" alt="Legging Performance Estampada">
+                    <div class="info-produto">
+                        <span class="categoria-tag">Feminino</span>
+                        <h3>Legging Performance Estampada</h3>
+                        <p class="preco">R$ 139,90</p>
+                        <button class="btn-comprar">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <!-- Produto 6 -->
+                <article class="card-produto" data-categoria="feminino" data-preco="69.90">
+                    <img src="top.png" alt="Top Cruzado Azul Petróleo">
+                    <div class="info-produto">
+                        <span class="categoria-tag">Feminino</span>
+                        <h3>Top Cruzado Azul Petróleo</h3>
+                        <p class="preco">R$ 69,90</p>
+                        <button class="btn-comprar">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <!-- Produto 7 -->
+                <article class="card-produto" data-categoria="feminino" data-preco="69.90">
+                    <img src="top 2.png" alt="Top Cruzado Preto">
+                    <div class="info-produto">
+                        <span class="categoria-tag">Feminino</span>
+                        <h3>Top Cruzado Sustentação Preto</h3>
+                        <p class="preco">R$ 69,90</p>
+                        <button class="btn-comprar">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Banner Inferior de Destaque -->
+    <section class="colecoes-section">
+        <div class="imagem-destaque">
+            <img src="imagem secundaria.png" alt="Coleção Feminina e Masculina União Empório">
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 União Empório. Todos os direitos reservados.</p>
+        <p>Desenvolvido para alta performance.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
